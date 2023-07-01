@@ -9,7 +9,10 @@ metadata:
 spec:
   type: ExternalName
   #externalName: 35.202.247.53
-  externalName: 10.10.10.10
+  externalName: 10.122.0.3
+  # this address is shown in the overview after we have created the private Cloud SQL instance
+  # as expected it in on the 10.122.0.0/16 private VPC network that was created for the peering.
+  # the 10.122.0.0/16 network can be seen in the default VPC under the Private Service Connection tab
 
   # the only difference between public Cloud SQL and private SQL is that this 
   # externalName will be the private ip addres of the Cloud SQL
